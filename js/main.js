@@ -26,11 +26,19 @@ $(document).ready(function(){
 		
 });
 
+	/*$(document).ready(function(){
 	
+	$(".clic").click(function(){
+		
+			$(".overlay-content").slideToggle();
+		
+	});	
+		
+});*/
 
  function openNav() {
 	  
-	  document.getElementById("myNav").style.width="70%";
+	  document.getElementById("myNav").style.width="90%";
   }
   
   

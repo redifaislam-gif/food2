@@ -32,6 +32,112 @@ html{
 	padding:0 40px;
 	
 }
+
+
+
+.icon-1
+{
+	
+	position:fixed;
+	
+	
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	display:-o-flex;
+	display:flex;
+	
+	
+	cursor:pointer;
+}
+
+
+
+.icon-2 i{
+	position:fixed;
+	color:white;
+	font-size:30px;
+	right:50px;
+	top:40px;
+	
+}
+
+.box{
+	
+	position:fixed;
+	top:0;
+	left:0;
+	height:50%;
+	width:100%;
+	background-color:rgba(0,0,0,0.8);
+    display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	display:-o-flex;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+    opacity:0;
+visibility:hidden;
+z-index:10000;
+transition:.5s;
+	
+}
+
+.box.open{
+	
+	opacity:1;
+	visibility:visible;
+	
+}        
+
+.form-area{
+	
+	width:100%;
+	max-width:800px;
+    display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	display:-o-flex;
+	display:flex;
+	width:100%;
+	border-bottom:1px solid white;
+	
+}
+.form-area input{
+	flex:1 1 auto;
+	background-color:transparent;
+	border:0;
+	font-size:30px;
+	
+	
+}
+
+.form-area button{
+	
+	background:crimson;
+	padding:0 10px;
+	border:none;
+	font-size:22px;
+	text-transform:uppercase;
+	letter-spacing:4px;
+	color:white;
+	cursor:pointer;
+}
+
+
+.site-btn{
+	width:150px;
+	height:60px;
+	background-color:#FF9100;
+	padding: 20px 40px;
+	border-radius:50px;
+}
+.site-btn .outline{
+	
+	margin-left:40px;
+}
+
 #loading{
 	
 	position:fixed;
@@ -120,20 +226,23 @@ html{
 	font-size:25px;
 	text-transform:uppercase;
 	letter-spacing:3px;
-	color:white;
+	color:black;
 	padding:1rem 0;
 }
 .overlay a:hover{
 	color:white;
 	
 }
+.overlay-content .active2{
+	color:white;
+}
 
 .overlay .closebtn{
 	position:absolute;
 	top:2rem;
 	right:70px;
-	font-size:70px;
-	color:white;
+	font-size:50px;
+	color:black;
 }
 .overlay-content {
     position: relative;
@@ -787,9 +896,6 @@ padding-right:50px;
 
 
 
-
-
-
 .one{
 	
 	-webkit-animation-delay:.1s;
@@ -987,5 +1093,44 @@ padding-right:50px;
 .fadeUP{
 		-webkit-animation-name:fadeUP;
 			animation-name:fadeUP;
+		
+}
+@-webkit-keyframes fadeDown{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(0,-100%,0);
+         transform:translate3d(0,-100%,0);
+	}
+	
+	to{
+		
+		opacity:1;
+			-webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+@keyframes fadeDown{
+	from{
+		
+		opacity:0;
+		-webkit-transform:translate3d(0,-100%,0);
+         transform:translate3d(0,-100%,0);
+	}
+	
+	to{
+		
+		opacity:1;
+	    -webkit-transform:none;
+         transform:none;
+	}
+	
+}
+
+.fadeDown{
+		-webkit-animation-name:fadeDown;
+			animation-name:fadeDown;
 		
 }

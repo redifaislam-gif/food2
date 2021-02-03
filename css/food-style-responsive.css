@@ -342,11 +342,10 @@ section.about-section2 {
 }
 
 @media only screen and (max-width:855px){
-	.top-btn{
-	display:none;	
-		
-	}
 	
+.site-btn{
+	display:none;
+}
 }
 @media only screen and (max-width:815px){
 	div.container-icon {
